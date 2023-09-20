@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.ExceptionServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                Console.WriteLine("Длина первой стороны");
+                int first = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Длина второй стороны");
+                int second = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Длина третьей стороны");
+                int third = Convert.ToInt32(Console.ReadLine());
+                if ((first + second) > third && (third + first) > second && (third + second) > first)
+                {
+                    Console.WriteLine("Такой треугольник существует");
+                }
+                else
+                {
+                    Console.WriteLine("Такого треугольника не существует");
+                }
+            }
+            Console.Read();
+        }   
+    }
+}
